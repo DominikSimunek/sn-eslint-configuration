@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?><unload unload_date="2025-08-03 08:17:09">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="Global">global</application>
+<application_name>Global</application_name>
+<application_scope>global</application_scope>
+<application_version/>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description>CONTENT
+Updates 2 system properties that define how ESLint is configured for the script editor in ServiceNow. One system property defines ESLint for EcmaScript 5 while the second for EcmaScript 12.
+These configurations were extended with additional rules related to best practices and coding style guidelines most widely used in Javascript like Prettier and Airbnb.
+
+For more details: https://github.com/DominikSimunek/sn-eslint-configuration/tree/main</description>
+<inserted/>
+<name>DominikSimunek-ESLintConfigurationForServiceNow-v1.0</name>
+<origin_sys_id/>
+<parent display_value=""/>
+<release_date/>
+<remote_base_update_set display_value=""/>
+<remote_parent_id/>
+<remote_sys_id>98a7848fc38fa2101ce75312b4013145</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>dominik@dominiksimunek.com</sys_created_by>
+<sys_created_on>2025-08-03 08:17:08</sys_created_on>
+<sys_id>16780ccfc38fa2101ce75312b4013150</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>dominik@dominiksimunek.com</sys_updated_by>
+<sys_updated_on>2025-08-03 08:17:08</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_properties_9bebca14731023001c233096fbf6a753</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties"><sys_properties action="INSERT_OR_UPDATE"><choices/><description>ESlint configuration</description><ignore_cache>false</ignore_cache><is_private>false</is_private><name>glide.ui.syntax_editor.linter.eslint_config</name><read_roles/><suffix/><sys_class_name>sys_properties</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2018-08-29 09:43:08</sys_created_on><sys_id>9bebca14731023001c233096fbf6a753</sys_id><sys_mod_count>4</sys_mod_count><sys_name>glide.ui.syntax_editor.linter.eslint_config</sys_name><sys_package display_value="Syntax Editor" source="com.glide.syntax_editor">1054b8a49921221008ddd351c8920a8b</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_properties_9bebca14731023001c233096fbf6a753</sys_update_name><sys_updated_by>dominik@dominiksimunek.com</sys_updated_by><sys_updated_on>2025-08-03 08:14:31</sys_updated_on><type>string</type><value>{&#13;
+    "parserOptions": {&#13;
+        "ecmaVersion": 5&#13;
+    },&#13;
+    "rules": {&#13;
+        "constructor-super": "warn",&#13;
+        "no-case-declarations": "warn",&#13;
+        "no-class-assign": "warn",&#13;
+        "no-compare-neg-zero": "warn",&#13;
+        "no-cond-assign": "warn",&#13;
+        "no-const-assign": "warn",&#13;
+        "no-constant-condition": "warn",&#13;
+        "no-control-regex": "warn",&#13;
+        "no-debugger": "warn",&#13;
+        "no-delete-var": "warn",&#13;
+        "no-dupe-args": "warn",&#13;
+        "no-dupe-class-members": "warn",&#13;
+        "no-dupe-keys": "warn",&#13;
+        "no-duplicate-case": "warn",&#13;
+        "no-empty-character-class": "warn",&#13;
+        "no-empty-pattern": "warn",&#13;
+        "no-empty": ["warn", { "allowEmptyCatch": true }],&#13;
+        "no-ex-assign": "warn",&#13;
+        "no-extra-boolean-cast": "warn",&#13;
+        "no-extra-semi": "warn",&#13;
+        "semi": "warn",&#13;
+        "no-fallthrough": "warn",&#13;
+        "no-func-assign": "warn",&#13;
+        "no-global-assign": "warn",&#13;
+        "no-inner-declarations": "warn",&#13;
+        "no-invalid-regexp": "warn",&#13;
+        "no-irregular-whitespace": "warn",&#13;
+        "no-mixed-spaces-and-tabs": "warn",&#13;
+        "no-new-symbol": "warn",&#13;
+        "no-obj-calls": "warn",&#13;
+        "no-octal": "warn",&#13;
+        "no-redeclare": "warn",&#13;
+        "no-regex-spaces": "warn",&#13;
+        "no-self-assign": "warn",&#13;
+        "no-sparse-arrays": "warn",&#13;
+        "no-this-before-super": "warn",&#13;
+        "no-undef": "off",&#13;
+        "no-unexpected-multiline": "warn",&#13;
+        "no-unreachable": "warn",&#13;
+        "no-unsafe-finally": "warn",&#13;
+        "no-unsafe-negation": "warn",&#13;
+        "no-unused-labels": "warn",&#13;
+        "no-unused-vars": "off",&#13;
+        "no-useless-escape": "warn",&#13;
+        "require-yield": "warn",&#13;
+        "use-isnan": "warn",&#13;
+        "valid-typeof": "warn",&#13;
+        "array-bracket-spacing": ["warn", "never"],&#13;
+        "brace-style": "warn",&#13;
+        "camelcase": ["warn", {"properties": "never", "allow": ["g_form", "g_list", "g_scratchpad", "g_menu", "g_user", "g_response", "g_request", "g_lang", "g_service_catalog", "g_processor"]}],&#13;
+        "comma-spacing": "warn",&#13;
+        "comma-style": "warn",&#13;
+        "computed-property-spacing": "warn",&#13;
+        "curly": ["warn", "multi-line"],&#13;
+        "func-call-spacing": ["warn", "never"],&#13;
+        "key-spacing": "warn",&#13;
+        "keyword-spacing": "warn",&#13;
+        "lines-around-comment": "warn",&#13;
+        "new-cap": "error",&#13;
+        "new-parens": "error",&#13;
+        "no-array-constructor": "error",&#13;
+        "no-console": "warn",&#13;
+        "no-eval": "error",&#13;
+        "no-extend-native": "error",&#13;
+        "no-floating-decimal": "warn",&#13;
+        "no-implied-eval": "error",&#13;
+        "no-lonely-if": "warn",&#13;
+        "no-multi-spaces": "warn",&#13;
+        "no-multiple-empty-lines": "warn",&#13;
+        "no-nested-ternary": "error",&#13;
+        "no-new-object": "error",&#13;
+        "no-self-compare": "warn",&#13;
+        "no-unneeded-ternary": "warn",&#13;
+        "no-whitespace-before-property": "warn",&#13;
+        "no-with": "error",&#13;
+        "space-before-blocks": "warn",&#13;
+        "space-infix-ops": "warn"&#13;
+    }&#13;
+}</value><write_roles/></sys_properties><sys_translated_text action="delete_multiple" query="documentkey=9bebca14731023001c233096fbf6a753"/></record_update>]]></payload>
+<payload_hash>-651860070</payload_hash>
+<remote_update_set display_value="DominikSimunek-ESLintConfigurationForServiceNow-v1.0">16780ccfc38fa2101ce75312b4013150</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>dominik@dominiksimunek.com</sys_created_by>
+<sys_created_on>2025-08-03 08:17:08</sys_created_on>
+<sys_id>5a780ccfc38fa2101ce75312b4013150</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1986eff2c4a0000001</sys_recorded_at>
+<sys_updated_by>dominik@dominiksimunek.com</sys_updated_by>
+<sys_updated_on>2025-08-03 08:17:08</sys_updated_on>
+<table/>
+<target_name>glide.ui.syntax_editor.linter.eslint_config</target_name>
+<type>System Property</type>
+<update_domain>global</update_domain>
+<update_guid>10e70c8f458fa210b6913e61721f5f63</update_guid>
+<update_guid_history>10e70c8f458fa210b6913e61721f5f63:-651860070,5793ffb2d24fa210263425a7998cbb26:-1044635080,ff43b3b2ba4fa210d6f756fbe17b81d2:-1698068606,42823f32be4fa210c14b9cfa461bfa7c:1093453340,6982fbbeb30fa210677259efa18a489f:-2023504387</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_properties_e6b79f250f332010b5a805c0ff767e7e</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties"><sys_properties action="INSERT_OR_UPDATE"><choices/><description>ESlint configuration for ECMAScript 2021 (ES12)</description><ignore_cache>false</ignore_cache><is_private>false</is_private><name>glide.ui.syntax_editor.linter.eslint_config.ecmascript2021</name><read_roles/><suffix/><sys_class_name>sys_properties</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2021-04-28 20:49:38</sys_created_on><sys_id>e6b79f250f332010b5a805c0ff767e7e</sys_id><sys_mod_count>3</sys_mod_count><sys_name>glide.ui.syntax_editor.linter.eslint_config.ecmascript2021</sys_name><sys_package display_value="Syntax Editor" source="com.glide.syntax_editor">1054b8a49921221008ddd351c8920a8b</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_properties_e6b79f250f332010b5a805c0ff767e7e</sys_update_name><sys_updated_by>dominik@dominiksimunek.com</sys_updated_by><sys_updated_on>2025-08-03 08:14:47</sys_updated_on><type>string</type><value>{&#13;
+    "parserOptions": {&#13;
+        "ecmaVersion": 12&#13;
+    },&#13;
+    "rules": {&#13;
+        "sn-no-proxies": "warn",&#13;
+        "constructor-super": "warn",&#13;
+        "no-case-declarations": "warn",&#13;
+        "no-class-assign": "warn",&#13;
+        "no-compare-neg-zero": "warn",&#13;
+        "no-cond-assign": "warn",&#13;
+        "no-const-assign": "warn",&#13;
+        "no-constant-condition": "warn",&#13;
+        "no-control-regex": "warn",&#13;
+        "no-debugger": "warn",&#13;
+        "no-delete-var": "warn",&#13;
+        "no-dupe-args": "warn",&#13;
+        "no-dupe-class-members": "warn",&#13;
+        "no-dupe-keys": "warn",&#13;
+        "no-duplicate-case": "warn",&#13;
+        "no-empty-character-class": "warn",&#13;
+        "no-empty-pattern": "warn",&#13;
+        "no-empty": ["warn", { "allowEmptyCatch": true }],&#13;
+        "no-ex-assign": "warn",&#13;
+        "no-extra-boolean-cast": "warn",&#13;
+        "no-extra-semi": "warn",&#13;
+        "semi": "warn",&#13;
+        "no-fallthrough": "warn",&#13;
+        "no-func-assign": "warn",&#13;
+        "no-global-assign": "warn",&#13;
+        "no-inner-declarations": "warn",&#13;
+        "no-invalid-regexp": "warn",&#13;
+        "no-irregular-whitespace": "warn",&#13;
+        "no-mixed-spaces-and-tabs": "warn",&#13;
+        "no-new-symbol": "warn",&#13;
+        "no-obj-calls": "warn",&#13;
+        "no-octal": "warn",&#13;
+        "no-redeclare": "warn",&#13;
+        "no-regex-spaces": "warn",&#13;
+        "no-self-assign": "warn",&#13;
+        "no-sparse-arrays": "warn",&#13;
+        "no-this-before-super": "warn",&#13;
+        "no-undef": "off",&#13;
+        "no-unexpected-multiline": "warn",&#13;
+        "no-unreachable": "warn",&#13;
+        "no-unsafe-finally": "warn",&#13;
+        "no-unsafe-negation": "warn",&#13;
+        "no-unused-labels": "warn",&#13;
+        "no-unused-vars": "off",&#13;
+        "no-useless-escape": "warn",&#13;
+        "require-yield": "warn",&#13;
+        "use-isnan": "warn",&#13;
+        "valid-typeof": "warn",&#13;
+        "array-bracket-spacing": ["warn", "never"],&#13;
+        "brace-style": "warn",&#13;
+        "camelcase": ["warn", {"properties": "never", "allow": ["g_form", "g_list", "g_scratchpad", "g_menu", "g_user", "g_response", "g_request", "g_lang", "g_service_catalog", "g_processor"]}],&#13;
+        "comma-spacing": "warn",&#13;
+        "comma-style": "warn",&#13;
+        "computed-property-spacing": "warn",&#13;
+        "curly": ["warn", "multi-line"],&#13;
+        "func-call-spacing": ["warn", "never"],&#13;
+        "key-spacing": "warn",&#13;
+        "keyword-spacing": "warn",&#13;
+        "lines-around-comment": "warn",&#13;
+        "new-cap": "error",&#13;
+        "new-parens": "error",&#13;
+        "no-array-constructor": "error",&#13;
+        "no-console": "warn",&#13;
+        "no-eval": "error",&#13;
+        "no-extend-native": "error",&#13;
+        "no-floating-decimal": "warn",&#13;
+        "no-implied-eval": "error",&#13;
+        "no-lonely-if": "warn",&#13;
+        "no-multi-spaces": "warn",&#13;
+        "no-multiple-empty-lines": "warn",&#13;
+        "no-nested-ternary": "error",&#13;
+        "no-new-object": "error",&#13;
+        "no-self-compare": "warn",&#13;
+        "no-unneeded-ternary": "warn",&#13;
+        "no-whitespace-before-property": "warn",&#13;
+        "no-with": "error",&#13;
+        "space-before-blocks": "warn",&#13;
+        "space-infix-ops": "warn"&#13;
+    }&#13;
+}</value><write_roles/></sys_properties><sys_translated_text action="delete_multiple" query="documentkey=e6b79f250f332010b5a805c0ff767e7e"/></record_update>]]></payload>
+<payload_hash>756917195</payload_hash>
+<remote_update_set display_value="DominikSimunek-ESLintConfigurationForServiceNow-v1.0">16780ccfc38fa2101ce75312b4013150</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>dominik@dominiksimunek.com</sys_created_by>
+<sys_created_on>2025-08-03 08:17:09</sys_created_on>
+<sys_id>92780ccfc38fa2101ce75312b4013151</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1986eff66df0000001</sys_recorded_at>
+<sys_updated_by>dominik@dominiksimunek.com</sys_updated_by>
+<sys_updated_on>2025-08-03 08:17:09</sys_updated_on>
+<table/>
+<target_name>glide.ui.syntax_editor.linter.eslint_config.ecmascript2021</target_name>
+<type>System Property</type>
+<update_domain>global</update_domain>
+<update_guid>c0f78c8fb98fa210a8f1528bde994ef4</update_guid>
+<update_guid_history>c0f78c8fb98fa210a8f1528bde994ef4:756917195,fab2b372144fa2104436ffdfdfa08725:-2058869365,51b273723f4fa210f49e9304c7a263b2:1186874502</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+</unload>
