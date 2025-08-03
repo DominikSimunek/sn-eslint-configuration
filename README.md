@@ -7,6 +7,10 @@ It is not 100% aligned as scripting in ServiceNow is in some aspects specific (f
 Study official documentation of ESLint to learn more and find concrete examples for each rule mentioned below: https://eslint.org
 
 ## Installation
+### Import Update Set
+Download the update set stored in this repo and import it into your instance using the standard import update set feature. This will update both ESLint system properties.
+
+### Update System Properties manually
 Locate the ESLint system properties in your ServiceNow instance:
 - Type "sys_properties.list" in the application filter and press Enter.
 - Search for a name containing "eslint".
