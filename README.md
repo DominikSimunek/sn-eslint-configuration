@@ -4,6 +4,8 @@ This configuration of ESLint system properties within ServiceNow extends the bas
 The configuration is expanded based on my experience with a goal to keep it well aligned with the most widely adopted style guides for JavaScript, like Prettier and Airbnb coding style guides.
 It is not 100% aligned as scripting in ServiceNow is in some aspects specific (for example, wide usage of undeclared, global variables and script include classes).
 
+Study official documentation of ESLint to learn more and find concrete examples for each rule mentioned below: https://eslint.org
+
 ## Installation
 Locate the ESLint system properties in your ServiceNow instance:
 - Type "sys_properties.list" in the application filter and press Enter.
