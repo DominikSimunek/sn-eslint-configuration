@@ -64,6 +64,9 @@ Requires () after "new" calls, even with no args (new Person()). Prevents confus
 ### "no-array-constructor": "error"
 Disallows "new Array()" because it behaves inconsistently.
 
+### "no-console": "warn"
+It was removed as part of the Zurich release, probably. But I keep it, as it is considered best practice to avoid console methods for production code.
+
 ### "no-eval": "error"
 Disallows "eval()", which is dangerous and can lead to injection or performance issues.
 
@@ -89,4 +92,29 @@ Prevents unnecessary spacing. Keeps code compact and clean.
 ### "no-multiple-empty-lines": "warn"
 Prevents too many blank lines, which can waste vertical space and obscure logic.
 
+### "no-nested-ternary": "error"
+Disallows nested ternaries, which are hard to read and maintain.
 
+### "no-new-object": "error"
+Disallows "new Object()" - use "{}" instead. More concise and reliable.
+
+### "no-self-compare": "warn"
+Flags code like "if (x === x)" which is either useless or a mistake.
+
+### "no-unneeded-ternary": "warn"
+Flags "condition ? true : false" as it could be written simply as "condition".
+
+### "no-whitespace-before-property": "warn"
+Disallows spaces like "obj .prop". Keeps syntax tight and clear.
+
+## Excluded Rules
+Some rules are on purpose and not yet included, while potentially used in Prettier or Airbnb. Read my notes why these rules are not included.
+
+### no-undef
+This rule is turned off as within ServiceNow, this would produce a large amount of false positives (any usage of globally available Script Include).
+
+### no-unused-vars
+Also, it produces many false positives. ServiceNow baseline decides to turn it off.
+
+### object-curly-spacing
+Most style guides use "always" to enforce spaces inside braces. For now, not included.
