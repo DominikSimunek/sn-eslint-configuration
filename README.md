@@ -6,6 +6,8 @@ It is not 100% aligned as scripting in ServiceNow is in some aspects specific (f
 
 Study the official documentation of ESLint to learn more and find concrete examples for each rule mentioned below: https://eslint.org
 
+Contribution: Do you want to contribute and help build a good, while simple ESLint configuration for ServiceNow? Reach out to me on GitHub or via email. I am open to improvement suggestions, as my first version is still far from perfect.
+
 ## Benefits of this ESLint configuration for ServiceNow
 - It is ServiceNow-specific and avoids an enormous amount of "false positives" by skipping some rules that do not fit the ServiceNow environment.
 - It supports ServiceNow exceptions for camel case naming convention that are common in ServiceNow (e.g., incidentGR.caller_id).
